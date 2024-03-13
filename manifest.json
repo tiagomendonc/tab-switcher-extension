@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "version": "0.0.1",
+    "name": "Tab Switcher (Full Screen)",
+    "description": "Switch between tabs in full screen mode each 30 seconds.",
+    "author": "Tiago Oliveira Mendonça",
+    "action": {
+        "default_title": "Tab Switcher",
+        "default_popup": "index.html",
+        "default_icon": {
+            "16": "switch.png",
+            "48": "switch.png",
+            "128": "switch.png"
+        }
+    },
+    "permissions": [
+        "activeTab",
+        "tabs"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    }
+}
